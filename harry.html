@@ -1,0 +1,37 @@
+import random
+
+def generate_poem():
+    lines = [
+        "Have you ever wondered, if you are the subject of my poem?",
+        "Or did you ever think that all my poems are dedicated to you?",
+        "'Cause, darling, I want to write a poem about you.",
+        "Admiring you is like appreciating the beauty of blooming flowers, unseen yet captivating.",
+        "I saw you with sparkling eyes.",
+        "When our eyes met, there was a spark that I couldn't explain.",
+        "A spark that bounced me beyond infinity.",
+        "I find myself drawn to you like gravity's gentle pull.",
+        "In the peaceful night, the air whispered at me with a soft hiss.",
+        "Out of the blue, all I think is you.",
+        "I always tell pretty lies with the moon.",
+        "If you were a star, I would gaze by the window till dawn.",
+        "My lungs filled with air, as my heart begins to beat.",
+        "My heart beats sing with a rhyme.",
+        "I don't know why, but my heart feels true, every beat, every pulse, a thought of you.",
+        "Our smallest conversations feel like beautiful music playing in my heart.",
+        "As my soul awakens from the endless night.",
+        "I always thought of our small interaction.",
+        "A small interaction that lifts me high in the sky.",
+        "When we have interactions every moment feels special and unforgettable, like precious memories that will never fade."
+    ]
+
+    poem = "\n".join(random.sample(lines, k=random.randint(10, 20)))
+    return poem
+
+def send_poem(poem, background_music_link):
+    print("Poem:\n" + poem)
+    print("Background Music Link: " + background_music_link)
+
+if __name__ == "__main__":
+    poem = generate_poem()
+    background_music_link = "https://www.youtube.com/watch?v=ZG82TmCwmj4"
+    send_poem(poem, background_music_link)
